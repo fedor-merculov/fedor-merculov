@@ -18,13 +18,13 @@
           flex-direction: column;
 }
 
-.flex-v-center {
+.flex-align-center {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.flex-h-center {
+.flex-center {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -57,4 +57,4 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-/*# sourceMappingURL=flex.css.map */
+/*# sourceMappingURL=flexboxtohtml.css.map */

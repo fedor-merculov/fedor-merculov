@@ -1,7 +1,7 @@
 $(document).ready(function(){
     /* Granim script for header background gradient */
-    var granimInstance = new Granim({
-        element: '#background',
+    var header = new Granim({
+        element: '#headerGranim',
         direction: 'diagonal',
         isPausedWhenNotInView: true,
         states : {
@@ -17,7 +17,6 @@ $(document).ready(function(){
 
     /* Full page scroll */
     $('#fullpage').fullpage({
-        
 });
 
 

@@ -15,17 +15,16 @@
 </head>
 <body class="flex">
     <!-- Header starts -->
-    <header class="header flex flex-v-center">
-        <div class="nav-menu__button">кнопка</div>
-        <nav class="nav-menu flex flex-column flex-v-center flex-between">
-            <div class="nav-menu__logo flex flex-column flex-v-center">
+    <header class="header flex flex-center">
+        <nav class="nav-menu flex flex-column flex-around">
+            <div class="nav-menu__logo">
                 <img src="./assets/img/logo.svg" alt="fedor merculov">
                 <p>web developing</p>
             </div>
-            <div class="nav-menu__list flex flex-column flex-v-center">
-                <a href="#services" class="nav-menu__list-item">услуги</a>
-                <a href="#portfolio" class="nav-menu__list-item">портфолио</a>
-                <a href="#contacts" class="nav-menu__list-item">контакты</a>
+            <div class="nav-menu__list flex flex-column">
+                <a href="#services" class="nav-menu__list-item" tabindex="1">услуги</a>
+                <a href="#portfolio" class="nav-menu__list-item" tabindex="2">портфолио</a>
+                <a href="#contacts" class="nav-menu__list-item" tabindex="3">контакты</a>
             </div>
             <div class="nav-menu__social">
                 <i class="nav-menu__social-icon">иконка</i>
@@ -33,11 +32,11 @@
                 <i class="nav-menu__social-icon">иконка</i>
             </div>
         </nav>
-        <canvas id="background"></canvas>
+        <canvas id="headerGranim"></canvas>
     </header>
     <!-- Header ends -->
-
     <main class="main" id="fullpage">
+        <!-- Services section -->
         <section class="services section" data-anchor="services">
             <div class="container flex flex-between">
                 <ul class="stack-list flex flex-column flex-between">
@@ -59,27 +58,25 @@
                 <h1 class="services__title">разработка<br>создание<br>поддержка<br>сайтов</h1>
             </div>
         </section>
+        <!-- Portfolio section -->
         <section class="portfolio section" data-anchor="portfolio">
-            <div class="wrapper">
-                <div class="item1"><img src="https://r.ddmcdn.com/w_830/s_f/o_1/cx_98/cy_0/cw_640/ch_360/APL/uploads/2015/07/cecil-AP463227356214-1000x400.jpg" alt=""></div>
-                <div class="item2"><img src="https://r.ddmcdn.com/w_830/s_f/o_1/cx_98/cy_0/cw_640/ch_360/APL/uploads/2015/07/cecil-AP463227356214-1000x400.jpg" alt=""></div>
-                <div class="item3"><img src="https://r.ddmcdn.com/w_830/s_f/o_1/cx_98/cy_0/cw_640/ch_360/APL/uploads/2015/07/cecil-AP463227356214-1000x400.jpg" alt=""></div>
-                <div class="item4"><img src="https://r.ddmcdn.com/w_830/s_f/o_1/cx_98/cy_0/cw_640/ch_360/APL/uploads/2015/07/cecil-AP463227356214-1000x400.jpg" alt=""></div>
-                <div class="item5"><img src="https://r.ddmcdn.com/w_830/s_f/o_1/cx_98/cy_0/cw_640/ch_360/APL/uploads/2015/07/cecil-AP463227356214-1000x400.jpg" alt=""></div>
-                <div class="item6"><img src="https://r.ddmcdn.com/w_830/s_f/o_1/cx_98/cy_0/cw_640/ch_360/APL/uploads/2015/07/cecil-AP463227356214-1000x400.jpg" alt=""></div>
-            </div>
+            <div class="slide"> Слайд 1 </div>
+            <div class="slide"> Слайд 2 </div>
+            <div class="slide"> Слайд 3 </div>
+            <div class="slide"> Слайд 4 </div>
         </section>
+        <!-- Contacts section -->
         <section class="contacts section" data-anchor="contacts">
             <div class="container">
                 <h3 class="contacts__form-title">Напишите прямо здесь</h3>
                 <form action="" class="contacts__form flex flex-column" autocomplete="off">
                     <label for="name">Ваше имя</label>
-                    <input type="text" name="name" id="name">
+                    <input type="text" name="name" id="name" tabindex="4">
                     <label for="email">Ваша электронная почта</label>
-                    <input type="email" name="email" id="email">
+                    <input type="email" name="email" id="email" tabindex="5">
                     <label for="message">Ваше сообщение</label>
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                    <input type="submit" value="отправить">
+                    <textarea name="message" id="message" cols="30" rows="10" tabindex="6"></textarea>
+                    <input type="submit" value="отправить" tabindex="7">
                 </form>
             </div>
         </section>
@@ -93,9 +90,9 @@
 
     <!-- Vendor scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="./assets/scripts/granim.js"></script>
-    <script src="./assets/scripts/fullpage.js"></script>
+    <script src="./assets/script/granim.js"></script>
+    <script src="./assets/script/fullpage.js"></script>
     <!-- User scripts -->
-    <script src="./assets/scripts/main.js"></script>
+    <script src="./assets/script/main.js"></script>
 </body>
 </html>
